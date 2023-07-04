@@ -1,0 +1,63 @@
+.local_repainter_svg, .local_repainter_canvas {
+	position:absolute;
+	left:50%;
+	top:50%;
+	
+	transform-origin:top left;
+    transform:translate(-50%, -50%);
+	
+	background-color:rgba(255,255,255,0);
+}
+
+.local_repainter_svg .local_repainter_box {
+	background-color:rgba(255,255,255,0.25);
+}
+
+.local_repainter_popup {
+	position:fixed;
+	z-index:999;
+	
+	left:0vw;
+	right:0vw;
+	top:0vh;
+	bottom:0vh;
+	
+	padding:1vw;
+	
+	background-color:#333;
+	color:#fff;
+}
+.local_repainter_popup .local_repainter_wrapper, .local_repainter_popup .local_repainter_menu {
+	display:inline-block;
+	vertical-align:top;
+}
+
+.local_repainter_popup .local_repainter_wrapper {
+	position:relative;
+	
+	width:90vw;
+	height:100%;
+}
+.local_repainter_popup .local_repainter_menu {
+	position:fixed;
+	
+	left:92vw;
+	right:1vw;
+	
+	font-size:3vw;
+	
+	text-align:center;
+}
+.local_repainter_popup .local_repainter_menu span {
+	display:block;
+	
+	margin:0 auto 0.5em;
+	width:100%;
+	max-width:1.5em;
+	
+	cursor:default;
+}
+.local_repainter_popup .local_repainter_menu span:hover {
+	color:#999;
+}
+
